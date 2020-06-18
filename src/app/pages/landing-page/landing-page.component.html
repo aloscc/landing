@@ -1,0 +1,173 @@
+<div class="container">
+  <header>
+    <img src="assets/images/desktop/logo.svg" alt="" />
+  </header>
+
+  <main>
+    <div class="main_container">
+      <h2>Regístrate a nuestro<span> evento</span></h2>
+
+      <form
+        (ngSubmit)="registerToEvent(f)"
+        action=""
+        class="form_container"
+        #f="ngForm"
+      >
+        <div class="form_item">
+          <div class="form_item-name" id="form_item-name">
+            <input
+              [(ngModel)]="user.name"
+              type="text"
+              name="name"
+              id="name"
+              placeholder="nombres"
+            />
+          </div>
+
+          <div class="form_item-surname">
+            <input
+              [(ngModel)]="user.lastName"
+              type="text"
+              name="surname"
+              id="surname"
+              placeholder="Apellidos"
+            />
+          </div>
+        </div>
+
+        <div class="form_item">
+          <div class="form_item-phone">
+            <label for="">N° Telefónico</label>
+          </div>
+
+          <div class="form_item-numberPhone">
+            <input
+              [(ngModel)]="user.phone"
+              type="text"
+              name="phone"
+              id="phone"
+            />
+          </div>
+        </div>
+
+        <div class="form_item">
+          <div class="form_item-email">
+            <label for="">correo</label>
+          </div>
+
+          <div class="form_item-txtemail">
+            <input
+              [(ngModel)]="user.email"
+              type="text"
+              name="email"
+              id="email"
+            />
+          </div>
+        </div>
+
+        <div class="form_item">
+          <div class="form_item-company">
+            <label for="">empresa</label>
+          </div>
+
+          <div class="form_item-txtcompany">
+            <select [(ngModel)]="user.companyId" name="company" id="company">
+              <option value=1>item 1</option>
+
+              <option value=1>item 2</option>
+
+              <option value=1>item 3</option>
+
+              <option value=1>item 4</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form_item">
+          <div class="form_item-role">
+            <label for="">rol</label>
+          </div>
+
+          <div class="form_item-txtrole">
+            <select [(ngModel)]="user.roleId" name="role" id="role">
+              <option value=1>item 1</option>
+
+              <option value=2>item 2</option>
+
+              <option value=3>item 3</option>
+
+              <option value=4>item 4</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form_item">
+          <div class="form_item-position">
+            <label for="">Cargo</label>
+          </div>
+
+          <div class="form_item-txtposition">
+            <input type="text" name="Position" id="Position" />
+          </div>
+        </div>
+
+        <div class="form_item">
+          <div class="form_item-website">
+            <label for="">Sitio web</label>
+          </div>
+
+          <div class="form_item-txtwebsite">
+            <input type="text" name="Website" id="Website" />
+          </div>
+        </div>
+
+        <div class="form_item checks">
+          <div class="checkBox-input">
+            <input type="checkbox" name="checkBox" id="checkBox" />
+
+            <label for="checkBox"></label>
+          </div>
+
+          <div class="checkBox-label">
+            <label for=""
+              >Crear una cuenta significa que está de acuerdo con nuestros
+
+              <span
+                >Términos de servicio, Política de privacidad y nuestra
+                Configuración</span
+              >
+
+              de notificaciones predeterminada.
+            </label>
+          </div>
+        </div>
+
+        <div class="form_item">
+          <button type="submit">registrarme</button>
+        </div>
+      </form>
+    </div>
+  </main>
+</div>
+
+<div class="container-footer">
+  <footer>
+    <div class="footer_top">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+        velit esse cillum dolore eu fugiat nulla pariatur. sed quia consequuntur
+        magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro
+        quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
+        adipisci velit, sed quia non numquam eius modi tempora incidunt ut
+        labore et dolore magnam aliquam quaerat voluptatem.
+      </p>
+    </div>
+
+    <div class="footer_bottom">
+      <p>Copyright 2019 - Todos los derechos reservados</p>
+    </div>
+  </footer>
+</div>
