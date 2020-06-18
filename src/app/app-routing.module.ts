@@ -9,7 +9,7 @@ const routes: Routes = [
   { path: "login", component: LoginComponent },
   { path: "events", component: EventListComponent },
   { path: "event/:eventId", component: EventComponent },
-  { path: "landing-page", component: LandingPageComponent },
+  { path: "", component: LandingPageComponent },
   { path: "**", redirectTo: "landing-page" }
 ];
 
