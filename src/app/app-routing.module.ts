@@ -10,7 +10,7 @@ const routes: Routes = [
   { path: "events", component: EventListComponent },
   { path: "event/:eventId", component: EventComponent },
   { path: "", component: LandingPageComponent },
-  { path: "**", redirectTo: "landing-page" }
+  { path: "**", redirectTo: "" }
 ];
 
 @NgModule({
